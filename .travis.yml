@@ -3,4 +3,6 @@ notifications:
 
 language: python
 
+before_script: pip install selenium pytest pytest-xdist sauceclient
+
 script: py.test -n2 --boxed example.py
