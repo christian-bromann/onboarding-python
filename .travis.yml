@@ -1,0 +1,6 @@
+notifications:
+  email: false
+
+language: python
+
+script: py.test -n2 --boxed example.py
