@@ -11,8 +11,8 @@ from sauceclient import SauceClient
 
 # it's best to remove the hardcoded defaults and always get these values
 # from environment variables
-USERNAME = os.environ.get('SAUCE_USERNAME', "cb-onboarding")
-ACCESS_KEY = os.environ.get('SAUCE_ACCESS_KEY', "ffd251ca-2705-49fc-a824-50333dc99eeb")
+USERNAME = os.environ.get('SAUCE_USERNAME', os.environ.get('SAUCE_USERNAME'))
+ACCESS_KEY = os.environ.get('SAUCE_ACCESS_KEY', os.environ.get('SAUCE_ACCESS_KEY'))
 sauce = SauceClient(USERNAME, ACCESS_KEY)
 
 browsers = [{"platform": "Windows 8",

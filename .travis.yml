@@ -6,3 +6,7 @@ language: python
 before_script: pip install selenium pytest pytest-xdist sauceclient
 
 script: py.test -n2 --boxed example.py
+
+global:
+  - secure: Ix2nazvblrBVDis/GRfKa7YgiM4hi2Jymg5HC3f8Pkc6JViaJAuHd0qy63PCXAbNaymsbsHZgvIt/wn44ck5wR8VC2fxoGYNk5GaO7KBbCpitBYIWw5GHpgqrbdII8kpIKeXGwTs97GdRxgWzmIHWqbA3HmZT7Zr9xE2P77Vvi4=
+  - secure: ebD4ZUk3WQJTlrP2n7XL96mfVq4T4vO0ZM5Av2HScCqQ4nK67+K97XJMbmyShZ1gti6zJpEQWKzrUJZ6Mhx5i/TyXqtYLQrckLMQZD3kAwj24ISWU1cy6RbZ4QlxAZhd3uVUVZCd8D7HmTJp5n1A6Efju/hRdWdyjt2C8//d1us=
